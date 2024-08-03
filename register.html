@@ -1,0 +1,89 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marriage Verification Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+            form {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            input, select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            input[type="file"] {
+                border: none;
+            }
+            input[type="submit"] {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Marriage Verification Form</h1>
+        <form action="/verify-marriage" method="post">
+            <!-- ... (input fields from previous response) ... -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+    
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+    
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+    
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+    
+            <label for="marriageDate">Marriage Date:</label>
+            <input type="date" id="marriageDate" name="marriageDate" required><br>
+    
+            <label for="spouseFirstName">Spouse's First Name:</label>
+            <input type="text" id="spouseFirstName" name="spouseFirstName" required><br>
+    
+            <label for="spouseLastName">Spouse's Last Name:</label>
+            <input type="text" id="spouseLastName" name="spouseLastName" required><br>
+    
+            <label for="proofOfMarriage">Proof of Marriage:</label>
+            <input type="file" id="proofOfMarriage" name="proofOfMarriage" accept=".pdf, .jpg, .png"><br>
+    
+            <input type="submit" value="Verify Marriage">
+        </form>
+    </body>
+    </html>
+    
